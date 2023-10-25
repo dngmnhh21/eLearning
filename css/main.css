@@ -118,6 +118,7 @@ body {
   right: 0;
   border-top: 1px solid rgba(20, 23, 28, 0.05);
   box-shadow: 0 4px 16px rgba(20, 23, 28, 0.25);
+  z-index: 2;
 }
 .myNavBar .myNavBar_right .navbar-nav .nav-item .overlay::before {
   content: "";
@@ -182,6 +183,7 @@ body {
   background-image: url(../img/udemy_bg.jpg);
   height: 700px;
   position: relative;
+  z-index: 1;
 }
 .cover .cover_content {
   max-width: 500px;
