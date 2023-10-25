@@ -1,3 +1,9 @@
+.cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -83,13 +89,63 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.myNavBar .myNavBar_right .navbar-nav .nav-item {
+  padding: 7px 5px;
+  border-radius: 3px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
 .myNavBar .myNavBar_right .navbar-nav .nav-item .nav-link {
   color: #505763;
   font-size: 13px;
   font-weight: normal;
 }
+.myNavBar .myNavBar_right .navbar-nav .nav-item:hover {
+  background-color: rgba(20, 23, 28, 0.05);
+}
+.myNavBar .myNavBar_right .navbar-nav .nav-item:hover .overlay {
+  display: block;
+}
+.myNavBar .myNavBar_right .navbar-nav .nav-item .overlay {
+  display: none;
+  background-color: #fff;
+  width: 330px;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  border-top: 1px solid rgba(20, 23, 28, 0.05);
+  box-shadow: 0 4px 16px rgba(20, 23, 28, 0.25);
+}
+.myNavBar .myNavBar_right .navbar-nav .nav-item .overlay::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  display: block;
+  border-top: 1px solid rgba(20, 23, 28, 0.05);
+  border-left: 1px solid rgba(20, 23, 28, 0.05);
+  position: absolute;
+  top: -9px;
+  right: 5%;
+  transform: rotate(45deg);
+}
+.myNavBar .myNavBar_right .navbar-nav .myNavBar_cart {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 20px;
+}
 .myNavBar .myNavBar_right .navbar-nav .myNavBar_cart .nav-link {
   font-size: 20px;
+}
+.myNavBar .myNavBar_right .navbar-nav .myNavBar_btn .button-white {
+  width: 81px;
+}
+.myNavBar .myNavBar_right .navbar-nav .myNavBar_btn:hover {
+  background-color: transparent;
 }
 
 .button-white {
@@ -120,4 +176,66 @@ body {
   color: #fff;
   background-color: #531822;
   border: 1px solid #531822;
+}
+
+.cover {
+  background-image: url(../img/udemy_bg.jpg);
+  height: 700px;
+  position: relative;
+}
+.cover .cover_content {
+  max-width: 500px;
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  transform: translateY(-40%);
+}
+.cover .cover_content h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+.cover .cover_content p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+.cover .cover_content .cover_form .input-group {
+  background-color: #fff;
+}
+.cover .cover_content .cover_form .input-group .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transition: none;
+  color: #505763;
+}
+.cover .cover_content .cover_form .input-group .form-control:focus {
+  background-color: #fff;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+.cover .cover_content .cover_form .input-group .form-control:focus + .input-group-append .input-group-text {
+  background-color: #fff;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+  color: #ec5252;
+}
+.cover .cover_content .cover_form .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+  background-color: #ec5252;
+  color: #fff;
+}
+.cover .cover_content .cover_form .input-group .input-group-append .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
+}
+.cover .cover_content .cover_form .input-group .input-group-append .input-group-text:hover {
+  background-color: #ec5252;
+  color: #fff;
+}
+.cover .cover_content .cover_form .input-group .input-group-append i {
+  line-height: 25px;
 }/*# sourceMappingURL=main.css.map */

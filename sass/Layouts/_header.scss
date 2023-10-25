@@ -22,54 +22,8 @@
     }
     .myNavBar_form-search{
         flex-grow: 8;
-        .input-group{
-            background-color: $color-white-cream;
-            .form-control{
-                background-color: transparent;
-                border-color: transparent;
-                box-shadow: none;
-                transition: none;
-                color: $color-black-light;
-                &:focus{
-                    background-color: $color-white-0;
-                    border-top-color: $color-gray-4;
-                    border-bottom-color: $color-gray-4;
-                    border-left-color: $color-gray-4;
-                }
-
-                &:focus + .input-group-append{
-                    .input-group-text{
-                        background-color: $color-white-0 ;
-                        border-top-color: $color-gray-4;
-                        border-bottom-color: $color-gray-4;
-                        border-right-color: $color-gray-4;
-                        color: $color-red-0 ;
-                        &:hover{
-                            background-color:$color-red-0 ;
-                            color: $color-white-0 ;
-                         }
-                    }
-                }
-            }
-            .input-group-append{
-                .input-group-text{
-                    background-color: transparent;
-                    border-color: transparent;
-                    color: $color-red-0 ;
-                    
-                    // &: parent selector 
-                    &:hover{
-                       background-color:$color-red-0 ;
-                       color: $color-white-0 ;
-                    }
-                }
-                i{
-                   line-height: 25px;
-                   
-                }
-                
-            }
-        }
+        @include styleFormSearch($color-white-cream, $color-white-0, $color-gray-4 );
+        
     }
     }
     .myNavBar_right{
@@ -77,14 +31,65 @@
             justify-content: space-between;
             align-items: center;
             .nav-item{
+                padding: $pd-2 + 2 $pd-2 ;
+                border-radius: $border-radius + 1;
+                margin-left: $mg-2;
+                margin-right: $mg-2;
+                position: relative;
                 .nav-link{
                     @include styleText($color-black-light, $fs-1, $fw-0);
                 }
+                &:hover{
+                    background-color: $color-gray-1;
+                    .overlay{
+                        display: block;
+                    }
+                }
+                .overlay{
+                    display: none;
+                    background-color: $color-white-0;
+                    width: 330px;
+                    padding: $pd-3;
+                    text-align: center;
+                    position: absolute;
+                    top: 60px;
+                    right: 0;
+                    border-top: 1px solid $color-gray-1 ;
+                    box-shadow: 0 4px 16px $color-gray-5;
+                    &::before{
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        background-color: $color-white-0;
+                        display: block;
+                        border-top: 1px solid $color-gray-1;
+                        border-left: 1px solid $color-gray-1;
+                        
+                        position: absolute;
+                        top: -9px;
+                        right: 5%;
+                        transform: rotate(45deg);
+
+                    }
+                }
+
             }
             .myNavBar_cart{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                line-height: 20px;
                 .nav-link{
                     font-size: $fs-3 + 2;
                 }
+            }
+            .myNavBar_btn{
+                .button-white{
+                    width: 81px;
+                }
+                 &:hover{
+                    background-color: transparent;
+                 }
             }
         }
     }
