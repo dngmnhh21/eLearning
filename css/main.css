@@ -149,6 +149,74 @@ body {
   background-color: transparent;
 }
 
+.intro {
+  background: linear-gradient(-45deg, #ec5252, #6e1a52);
+  padding: 20px;
+}
+.intro .intro_content {
+  width: 78%;
+  margin: 0 auto;
+}
+.intro .intro_content .intro_item {
+  display: flex;
+  align-items: center;
+}
+.intro .intro_content .intro_icon {
+  font-size: 50px;
+  color: #fff;
+  margin-right: 25px;
+}
+.intro .intro_content .intro_details p {
+  margin-bottom: 0;
+}
+.intro .intro_content .intro_details p:first-child {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+}
+.intro .intro_content .intro_details p:last-child {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.courses {
+  margin: 25px 0;
+}
+.courses .courses_content {
+  width: 90%;
+  margin: auto;
+}
+.courses .courses_content .courses_left {
+  background-color: rgba(20, 23, 28, 0.05);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+.courses .courses_content .courses_left h2 {
+  color: #29303b;
+  font-size: 19px;
+  font-weight: normal;
+}
+.courses .courses_content #myTab {
+  margin-bottom: 25px;
+}
+.courses .courses_content #myTab .nav-link {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+.courses .courses_content #myTab .nav-link:hover {
+  border: 1px solid transparent;
+  color: #007791;
+  font-size: 15px;
+  font-weight: normal;
+}
+.courses .courses_content #myTab .nav-link.active {
+  border: none;
+  border-bottom: 5px solid #007791;
+}
+
 .button-white {
   color: #686f7a;
   background-color: #fff;
