@@ -1,0 +1,40 @@
+.card{
+    height: 300px;
+    margin-right: 1px;
+    .card-body{
+        padding: 1rem;
+        .card-title{
+            @include styleText($color-black-0, $fs-0, $fw-1);
+
+        }
+        .card-text{
+            @include styleText($color-gray-0, $fs-1 - 1, $fw-0);
+            margin: $mg-0;
+        }
+        .card_stars{
+            i{
+                @include styleText($color-yellow-0, $fs-1 - 1, $fw-3);  
+            }
+            .card_point{
+                @include styleText($color-gray-0, $fs-1 , $fw-1);
+            }
+            .card_total{
+                @include styleText($color-gray-0, $fs-1 , $fw-0);
+            }
+        }
+        .card_price{
+            text-align: right;
+            padding: 8px 0;
+            span{
+                &:first-child{
+                    @include styleText($color-gray-0, $fs-1 , $fw-0);
+                    text-decoration: line-through;
+                }
+                &:last-child{
+                    @include styleText($color-black-0, $fs-0 , $fw-1);
+                   
+                }
+            }
+        }
+    }
+}
