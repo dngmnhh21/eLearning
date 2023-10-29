@@ -38,3 +38,29 @@
         }
     }
 }
+
+.card-feedback{
+    height: 280px;
+    .card-body{
+        padding: 2rem;
+        .card_top{
+            display: flex;
+
+        }
+        .card_avatar{
+            margin-right: $mg-2 - 5;
+            img{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+
+        }
+        .card_name{
+            margin-bottom:  0;
+        }
+        .card-text{
+            @include styleText($color-black-0, $fs-0, $fw-0);
+        }
+    }
+}
