@@ -33,9 +33,16 @@
 
     <!-- Header -->
     <header>
-        <nav class="myNavBar navbar navbar-expand-lg">
+        <nav class="myNavBar navbar navbar-expand-md">
+            <div class="d-md-none col-3 col-sm-2 ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
-            <div class="col-7">
+            <div class=" col-sm-8 col-md-8 col-lg-9 col-xl-7 col-6">
                 <div class="myNavBar_left">
                     <a class="navbar-brand" href="#">
                         <img src="./img/logo-white.jpg" alt="logo">
@@ -55,17 +62,17 @@
                     </form>
                 </div>
             </div>
-            <div class="col-5">
+            <div class="col-sm-2 col-md-4 col-lg-3 col-xl-5 col-3 myNavBar-reset">
                 <div class="myNavBar_right">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item business">
                             <a class="nav-link" href="#">Udemy for Business</a>
                             <div class="overlay">
                                 <p>Get your team access to Udemy's top 2,500 courses anytime, anywhere.</p>
                                 <a href="#">Try Udemy for Business</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item instructor">
                             <a class="nav-link" href="#">Become an Instructor</a>
                             <div class="overlay">
                                 <p>Get your team access to Udemy's top 2,500 courses anytime, anywhere.</p>
@@ -76,7 +83,7 @@
                             <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
                         </li>
                         <li class="nav-item myNavBar_btn">
-                            <button class="button button-white">Login</button>
+                            <button class="button button-white">Log In</button>
                             <button class="button button-red">Sign Up</button>
                         </li>
                     </ul>
@@ -84,11 +91,7 @@
             </div>
 
 
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
+            
 
         </nav>
     </header>
@@ -800,13 +803,136 @@
     </section>
 
     <!-- Partners -->
-    <section class="partners"></section>
+    <section class="partners">
+        <div class="partners_content">
+            <div class="partners_text">
+                <p>Trusted by companies of all sizes</p>
+            </div>
+            <div class="partners_img">
+                <div class="partners_items">
+                    <img style="width: 80px;" src="./img/bookingcom-1.svg" alt="pn1">
+                </div>
+                <div class="partners_items">
+                    <img style="width: 80px;" src="./img/mercedes.svg" alt="pn2">
+                </div>
+                <div class="partners_items">
+                    <img style="width: 80px;" src="./img/Volkswagen.svg" alt="pn3">
+                </div>
+                <div class="partners_items">
+                    <img style="width: 80px;" src="./img/pinterest.svg" alt="pn4">
+                </div>
+                <div class="partners_items">
+                    <img style="width: 80px;" src="./img/PayPal_logo.svg" alt="pn5">
+                </div>
+                <div class="partners_items">
+                    <img style="width: 80px;" src="./img/adidas-9.svg" alt="pn6">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- jobs -->
-    <section class="jobs"></section>
+    <section class="jobs">
+        <div class="jobs_content container-fluid">
+            <div class="row">
+                <div class="col-6 border-end">
+                    <div class="jobs_item">
+                        <h2> Become an Instructor</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit id vel odio quam?
+                            Voluptas?</p>
+                        <button class="button-red">Start teaching today</button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="jobs_item">
+                        <h2> Udemy for Business</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit id vel odio quam?
+                            Voluptas?</p>
+                        <button class="button-red">Get Udemy for Business</button>
+                    </div>
+                </div>
+            </div>
+    </section>
 
     <!-- footer -->
-    <footer></footer>
+    <footer>
+        <div class="footer_top">
+            <div class="row">
+                <div class="col-9">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="#">Udemy for Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bold" href="#">Teach on Udemy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Udemy app</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help and Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Affiliate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sitemap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Featured courses</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="btn-group dropup text-end">
+                        <button type="button" class="btn button-dropup dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-globe"></i>English
+                        </button>
+                        <ul class="dropdown-menu">
+                            <!-- Dropdown menu links -->
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                            <li><a class="dropdown-item" href="#">Bahasa Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#">Italiano</a></li>
+                            <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="footer_bottom">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./img/logo-white.jpg" alt="">
+                    <span>Copyright &copy; 2020 Udemy, Inc.</span>
+                </div>
+                <div class="col-6">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Terms</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Privacy Policy and Cookie Policy</a>
+                        </li>
+                        
+                      </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
     <!-- JS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

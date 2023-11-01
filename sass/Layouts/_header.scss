@@ -85,13 +85,78 @@
                 }
             }
             .myNavBar_btn{
+                display: flex;
                 .button-white{
-                    width: 81px;
+                    margin-right: $mg-0;
                 }
                  &:hover{
                     background-color: transparent;
                  }
+                 .button{
+                    white-space: nowrap;
+                 }
+            }
+        }
+    }
+
+    
+
+    @media screen and (min-width:1200px ) and (max-width:1677px ) {
+           .myNavBar_right{
+            .navbar-nav{
+                .nav-item{
+                    white-space: nowrap;
+                    .overlay{
+                        white-space: normal;
+                    }
+                    .nav-link{
+                        font-size: $fs-1 - 1;
+                    }
+                }
+            }
+           }
+           .myNavBar-reset{
+            padding-left: 0;
+           }
+    }
+
+    @media screen and (min-width:1201px ) and (max-width:1533px ){
+        .myNavBar_right{
+            .navbar-nav{
+                .nav-item{
+                    margin: 0;
+                }
+             
+            }
+        }
+    }
+
+    @include responsive("extra-large"){
+        .business, .instructor{
+            display: none;
+        }
+        .myNavBar_right{
+            .navbar-nav{
+                justify-content: space-around;
+            }
+        }
+    }
+    @include responsive("medium"){
+        .myNavBar_left{
+            .myNavBar_categories, .myNavBar_form-search{
+                display: none;
+            }
+        }
+        .myNavBar_right{
+            width: 50%;
+            margin-left: auto;
+            .navbar-nav{
+                text-align: center;
+                .myNavBar_btn{
+                    display: none;
+                }
             }
         }
     }
 }
+

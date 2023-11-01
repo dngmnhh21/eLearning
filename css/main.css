@@ -165,11 +165,110 @@ body {
 .myNavBar .myNavBar_right .navbar-nav .myNavBar_cart .nav-link {
   font-size: 20px;
 }
+.myNavBar .myNavBar_right .navbar-nav .myNavBar_btn {
+  display: flex;
+}
 .myNavBar .myNavBar_right .navbar-nav .myNavBar_btn .button-white {
-  width: 81px;
+  margin-right: 5px;
 }
 .myNavBar .myNavBar_right .navbar-nav .myNavBar_btn:hover {
   background-color: transparent;
+}
+.myNavBar .myNavBar_right .navbar-nav .myNavBar_btn .button {
+  white-space: nowrap;
+}
+@media screen and (min-width: 1200px) and (max-width: 1677px) {
+  .myNavBar .myNavBar_right .navbar-nav .nav-item {
+    white-space: nowrap;
+  }
+  .myNavBar .myNavBar_right .navbar-nav .nav-item .overlay {
+    white-space: normal;
+  }
+  .myNavBar .myNavBar_right .navbar-nav .nav-item .nav-link {
+    font-size: 12px;
+  }
+  .myNavBar .myNavBar-reset {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1533px) {
+  .myNavBar .myNavBar_right .navbar-nav .nav-item {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .myNavBar .business, .myNavBar .instructor {
+    display: none;
+  }
+  .myNavBar .myNavBar_right .navbar-nav {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 768px) {
+  .myNavBar .myNavBar_left .myNavBar_categories, .myNavBar .myNavBar_left .myNavBar_form-search {
+    display: none;
+  }
+  .myNavBar .myNavBar_right {
+    width: 50%;
+    margin-left: auto;
+  }
+  .myNavBar .myNavBar_right .navbar-nav {
+    text-align: center;
+  }
+  .myNavBar .myNavBar_right .navbar-nav .myNavBar_btn {
+    display: none;
+  }
+}
+
+footer {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+footer .footer_top {
+  width: 90%;
+  margin: 40px auto;
+}
+footer .footer_top ul {
+  height: 140px;
+}
+footer .footer_top ul .nav-item {
+  flex-basis: 25%;
+}
+footer .footer_top ul .nav-item .nav-link {
+  color: #007791;
+}
+footer .footer_top ul .nav-item .nav-link.bold {
+  font-weight: 700;
+}
+footer .footer_top .btn-group {
+  display: block;
+}
+footer .footer_top .btn-group .button-dropup {
+  min-width: 160px;
+  box-shadow: none;
+}
+footer .footer_top .btn-group .button-dropup i {
+  padding: 0 5px;
+}
+footer .footer_top .btn-group .button-dropup::after {
+  margin-left: 30%;
+}
+footer .footer_top .btn-group .dropdown-menu {
+  font-size: 13px;
+}
+footer .footer_bottom {
+  width: 90%;
+  margin: 30px auto;
+}
+footer .footer_bottom img {
+  width: 110px;
+  margin-right: 10px;
+}
+footer .footer_bottom .nav-link {
+  color: #007791;
+  font-size: 13px;
+  font-weight: normal;
 }
 
 .intro {
@@ -201,6 +300,16 @@ body {
   color: #fff;
   font-size: 15px;
   font-weight: normal;
+}
+@media screen and (max-width: 1200px) {
+  .intro .intro_content .intro_icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro {
+    display: none;
+  }
 }
 
 .courses {
@@ -312,6 +421,40 @@ body {
   margin-bottom: 20px;
 }
 
+.partners {
+  background-color: #f7f8fa;
+  padding: 20px 0;
+}
+.partners .partners_content {
+  width: 70%;
+  margin: 0 auto;
+}
+.partners .partners_content .partners_text {
+  text-align: center;
+}
+.partners .partners_content .partners_img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobs {
+  background-color: #f7f8fa;
+}
+.jobs .jobs_content .row {
+  padding: 10px 0;
+}
+.jobs .jobs_content .jobs_item {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+.jobs .jobs_content .jobs_item h2 {
+  color: #505763;
+  font-size: 19px;
+  font-weight: 600;
+}
+
 .button-white {
   color: #686f7a;
   background-color: #fff;
@@ -340,6 +483,21 @@ body {
   color: #fff;
   background-color: #531822;
   border: 1px solid #531822;
+}
+
+.button-dropup {
+  color: #686f7a;
+  background-color: #fff;
+  border: 1px solid #505763;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.button-dropup:hover {
+  color: #29303b;
+  background-color: transparent;
+  border: 1px solid #29303b;
 }
 
 .cover {
@@ -403,6 +561,11 @@ body {
 }
 .cover .cover_content .cover_form .input-group .input-group-append i {
   line-height: 25px;
+}
+@media screen and (max-width: 576px) {
+  .cover .cover_content {
+    max-width: 400px;
+  }
 }
 
 .card {

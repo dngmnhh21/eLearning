@@ -28,4 +28,16 @@
             }
         }
     }
+    @include responsive("extra-large"){
+        .intro_content{
+            .intro_icon{
+                display: none;
+            }
+        }
+    }
+    @include responsive("medium"){
+        
+            display: none;
+         
+    }
 }
