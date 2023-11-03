@@ -34,4 +34,27 @@
         }
     }
 
+    @include responsive("extra-extra-large") {
+        .courses_content{
+            .card{
+                
+                .card-body{
+                    
+                    .card-title{
+                        @include styleText($color-black-0, $fs-1, $fw-1);
+            
+                    }
+                }
+            }
+        }
+
+    }
+    @include responsive("medium"){
+         .courses_content{
+            .courses_left{
+                padding: $pd-3;
+            }
+         }
+    }
+
 }

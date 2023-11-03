@@ -7,4 +7,20 @@
             font-size: $fs-3 + 2;
         }
     }
+
+    @include responsive("extra-extra-large") {
+        .viewing_content{
+            .card{
+                
+                .card-body{
+                    
+                    .card-title{
+                        @include styleText($color-black-0, $fs-1, $fw-1);
+            
+                    }
+                }
+            }
+        }
+
+    }
 }

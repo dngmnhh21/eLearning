@@ -12,4 +12,30 @@
             justify-content: space-between;
         }
     }
+    @include responsive("extra-large"){
+        .partners_content{
+            width: 80%;
+        }
+
+    }
+    @include responsive("large"){
+        .partners_content{
+            width: 90%;
+        }
+
+    }
+    @include responsive("small"){
+        .partners_content{
+           
+        .partners_img{
+            flex-wrap: wrap;
+            .partners_items{
+                width: 30%;
+                text-align: center;
+                margin-bottom: $mg-0 + 5;
+            }
+        }
+
+    }
+}
 }

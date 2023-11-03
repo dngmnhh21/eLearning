@@ -30,6 +30,23 @@
 </head>
 
 <body>
+    <!-- sidebar mini  -->
+    <div class="sidebarMini">
+        <button class="sidebarMini_button">
+            <i class="fa fa-cog"></i>
+        </button>
+        <div class="sidebarMini_content">
+            <h2>Dark Mode</h2>
+            <div class="d-flex">
+                <span>Off</span>
+                <label class="switch" for="checkbox">
+                    <input type="checkbox" name="" id="checkbox">
+                    <div class="slider"></div>
+                </label>
+                <span>On</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Header -->
     <header>
@@ -158,13 +175,13 @@
     <section class="courses">
         <div class="courses_content">
             <div class="row">
-                <div class="col-4 courses_left">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-4 courses_left">
                     <div>
                         <h2>The world's largest selection of courses</h2>
                         <p>Choose from over 80,000 online video courses with new additions published every month </p>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-8">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="dev-tab" data-bs-toggle="tab" data-bs-target="#dev"
@@ -553,49 +570,49 @@
         <div class="categories_content">
             <h2>Top Categories</h2>
             <div class="row">
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="categories_item">
                         <i class="fa fa-code"></i>
                         <span>Development</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="categories_item">
                         <i class="fa fa-chart-bar"></i>
                         <span>Business</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="categories_item">
                         <i class="fa fa-laptop"></i>
                         <span>IT and Software</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="categories_item">
                         <i class="fa fa-pencil-alt"></i>
                         <span>Design</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="categories_item">
                         <i class="fa fa-bullseye"></i>
                         <span>Marketing</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="categories_item">
                         <i class="fa fa-book"></i>
                         <span>Personal Development</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="categories_item">
                         <i class="fa fa-camera"></i>
                         <span>Photography</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="categories_item">
                         <i class="fa fa-music"></i>
                         <span>Music</span>
@@ -835,7 +852,7 @@
     <section class="jobs">
         <div class="jobs_content container-fluid">
             <div class="row">
-                <div class="col-6 border-end">
+                <div class="col-md-6 col-sm-12 col-12 border-end">
                     <div class="jobs_item">
                         <h2> Become an Instructor</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit id vel odio quam?
@@ -843,7 +860,7 @@
                         <button class="button-red">Start teaching today</button>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12 col-12">
                     <div class="jobs_item">
                         <h2> Udemy for Business</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit id vel odio quam?
@@ -858,7 +875,7 @@
     <footer>
         <div class="footer_top">
             <div class="row">
-                <div class="col-9">
+                <div class="col-md-9 col-12">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link bold" href="#">Udemy for Business</a>
@@ -892,8 +909,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
-                    <div class="btn-group dropup text-end">
+                <div class="col-md-3 col-12">
+                    <div class="btn-group dropup text-md-end">
                         <button type="button" class="btn button-dropup dropdown-toggle" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="fa fa-globe"></i>English
@@ -914,12 +931,12 @@
         <hr>
         <div class="footer_bottom">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6 col-12">
                     <img src="./img/logo-white.jpg" alt="">
                     <span>Copyright &copy; 2020 Udemy, Inc.</span>
                 </div>
-                <div class="col-6">
-                    <ul class="nav justify-content-end">
+                <div class="col-md-6 col-12">
+                    <ul class="nav justify-content-md-end">
                         <li class="nav-item">
                           <a class="nav-link" href="#">Terms</a>
                         </li>
@@ -954,13 +971,20 @@
             dots: false,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2,
+                    margin: 5
                 },
                 600: {
-                    items: 3
+                    items: 3,
+                    margin: 5
                 },
                 1000: {
-                    items: 4
+                    items: 4,
+                    margin:5
+                },
+                1450: {
+                    items: 4,
+                    margin: 15
                 }
             }
         });
@@ -972,13 +996,24 @@
             dots: false,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2,
+                    margin: 5
                 },
                 600: {
-                    items: 3
+                    items: 3,
+                    margin: 5
+                },
+                768:{
+                    items: 4,
+                    margin: 5
                 },
                 1000: {
-                    items: 6
+                    items: 6,
+                    margin:5
+                },
+                1450: {
+                    items: 6,
+                    margin: 15
                 }
             }
         });
@@ -992,11 +1027,14 @@
                 0: {
                     items: 1
                 },
-                600: {
+                900: {
+                    items: 2
+                },
+                1200: {
                     items: 3
                 },
-                1000: {
-                    items: 3
+                1500: {
+                    items: 4
                 }
             }
         });
