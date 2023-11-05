@@ -1,0 +1,10 @@
+.darkMode{
+    .feedback{
+        background-color: $color-dark-6;
+        .feedback_content{
+            h2{
+                color: $color-dark-5;
+            }
+        }
+    }
+}

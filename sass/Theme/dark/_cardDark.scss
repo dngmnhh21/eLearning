@@ -30,4 +30,12 @@
 
         }
     }
+    .card-feedback{
+        background-color: $color-dark-4;
+        .card-body{
+            .card_name{
+                color: $color-dark-5;
+            }
+        }
+    }
 }
